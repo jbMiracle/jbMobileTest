@@ -1,0 +1,5 @@
+## Snapshots of the `navigation` prop
+
+Given the complexity of our navigation structure (stacks in tabs in stacks in etc.), I did not want to have to manually create an object to mock the navigation prop that react-navigation would normally pass to our screens.  So instead we can harness Reactotron's nice logging of objects.  There is a copy button on every log entry in Reactotron; in the case of objects being logged directly, this copy will put a formatted JSON representation on the clibboard.  I then paste that JSON into a file in this directory corresponding to a particular navigation state that I want to test.
+
+I have left a commented out `console.tron.log` statement in `header.js` which we can use to capture a desired navigation state.  Simply uncomment that, run the app, navigate to the state you want to test, and in Reactotron copy the most recent log entry of that navigation object.  Be sure to comment that `console.tron.log` statement back out when done capturing a navigation state snapshot.

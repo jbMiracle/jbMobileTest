@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`presentLocalNotification() should pass the appropriate options to FCM.presentLocalNotification() 1`] = `
+Object {
+  "body": "test body",
+  "color": "#007DBA",
+  "priority": "high",
+  "show_in_foreground": true,
+  "title": "Test Title",
+}
+`;
+
+exports[`presentLocalNotificationWithActions() should pass the appropriate options to FCM.presentLocalNotification() 1`] = `
+Object {
+  "body": "test body",
+  "click_action": "com.jbhunt.carrier360.exampleA",
+  "color": "#007DBA",
+  "priority": "high",
+  "show_in_foreground": true,
+  "title": "Test Title",
+}
+`;
+
+exports[`scheduleLocalNotification() should pass the appropriate options to FCM.scheduleLocalNotification() 1`] = `
+Object {
+  "body": "test body",
+  "color": "#007DBA",
+  "fire_date": 1577836800,
+  "id": "test-notification-id",
+  "priority": "high",
+  "show_in_foreground": true,
+  "title": "Test Title",
+}
+`;
+
+exports[`scheduleLocalNotificationWithActions() should pass the appropriate options to FCM.scheduleLocalNotification() 1`] = `
+Object {
+  "body": "test body",
+  "click_action": "com.jbhunt.carrier360.exampleA",
+  "color": "#007DBA",
+  "fire_date": 1577836800,
+  "id": "test-notification-id",
+  "priority": "high",
+  "show_in_foreground": true,
+  "title": "Test Title",
+}
+`;

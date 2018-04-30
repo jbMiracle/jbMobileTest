@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BiometrySaga biometricLoginSetup 1`] = `Object {}`;
+
+exports[`BiometrySaga biometricSupportDetermined 1`] = `Object {}`;
+
+exports[`BiometrySaga queryBiometricSupport 1`] = `Object {}`;
+
+exports[`BiometrySaga setupBiometricLogin 1`] = `Object {}`;
+
+exports[`BiometrySaga userAuthenticated 1`] = `Object {}`;

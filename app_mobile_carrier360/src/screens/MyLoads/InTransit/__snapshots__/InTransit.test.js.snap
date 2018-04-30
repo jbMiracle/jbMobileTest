@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render an empty component 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+  testID="in_transit"
+>
+  <Styled(Text)
+    virtual={undefined}
+  >
+    In Transit
+  </Styled(Text)>
+  <Styled(Button)
+    onPress={[Function]}
+    style={
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "#FFDB00",
+        "marginTop": 15,
+        "padding": 0,
+      }
+    }
+    virtual={undefined}
+  >
+    <Styled(Text)
+      style={
+        Object {
+          "color": "#005F8E",
+          "fontSize": 12,
+          "fontWeight": "bold",
+        }
+      }
+      virtual={undefined}
+    >
+      Show Load Details
+    </Styled(Text)>
+  </Styled(Button)>
+</View>
+`;

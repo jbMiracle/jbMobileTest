@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render tab button 1`] = `
+<C360TabButton
+  backgroundColor="#fff"
+  id="buttondId"
+  indicator="#292929"
+  main={false}
+  mainIconColor="#757575"
+  navigation={Object {}}
+  onPress={[Function]}
+  style={
+    Object {
+      "mainButton": Object {
+        "alignItems": "center",
+        "backgroundColor": "#dedede",
+        "borderRadius": 24,
+        "height": 48,
+        "justifyContent": "center",
+        "marginTop": -24,
+        "paddingBottom": 2,
+        "width": 48,
+      },
+      "mainButtonIcon": Object {
+        "color": "white",
+      },
+      "mainItem": Object {
+        "alignItems": "center",
+        "height": 60,
+        "justifyContent": "flex-end",
+        "paddingBottom": 2,
+      },
+      "tabIcon": Object {
+        "paddingBottom": 5,
+      },
+      "tabItem": Object {
+        "alignItems": "center",
+        "height": 60,
+        "justifyContent": "center",
+        "paddingTop": 2,
+      },
+      "tabTitle": Object {
+        "fontSize": 11,
+        "paddingTop": 5,
+      },
+    }
+  }
+  tintColor="#757575"
+  title="Example"
+  virtual={undefined}
+/>
+`;

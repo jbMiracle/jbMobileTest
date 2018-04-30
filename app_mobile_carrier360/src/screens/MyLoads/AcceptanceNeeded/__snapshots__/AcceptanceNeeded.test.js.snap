@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render an empty component 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+  testID="acceptance_needed"
+>
+  <Styled(Text)
+    virtual={undefined}
+  >
+    Acceptance Needed
+  </Styled(Text)>
+</View>
+`;

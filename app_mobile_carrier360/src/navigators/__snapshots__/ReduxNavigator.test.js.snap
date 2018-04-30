@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReduxNavigator back navigation will navigate back if there is a stack 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "immediate": undefined,
+        "key": undefined,
+        "type": "Navigation/BACK",
+      },
+    ],
+  ],
+}
+`;
+
+exports[`ReduxNavigator lifecycle functions will add the back listener on mount 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "hardwareBackPress",
+      [Function],
+    ],
+  ],
+}
+`;
+
+exports[`ReduxNavigator lifecycle functions will remove the back listener on unmount 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "hardwareBackPress",
+      [Function],
+    ],
+  ],
+}
+`;

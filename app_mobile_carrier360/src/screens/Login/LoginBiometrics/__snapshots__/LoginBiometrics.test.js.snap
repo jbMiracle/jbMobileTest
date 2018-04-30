@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render a menu list component 1`] = `
+<C360LogoContainer
+  descriptionText="You need to setup Face ID on your device that you will use to log in to J.B. Hunt Carrier 360."
+  headerText="Login using Face ID"
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/faceIdLogoLarge.png",
+      }
+    }
+    style={
+      Object {
+        "height": 140,
+        "marginVertical": 30,
+        "width": 140,
+      }
+    }
+  />
+  <Styled(Button)
+    block={true}
+    large={true}
+    onPress={[Function]}
+    primaryDark={true}
+    testID="setup_touch_id"
+    virtual={undefined}
+  >
+    <Styled(Text)
+      virtual={undefined}
+    >
+      Setup Face ID
+    </Styled(Text)>
+  </Styled(Button)>
+</C360LogoContainer>
+`;

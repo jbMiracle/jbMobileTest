@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "import/no-extraneous-dependencies": "off",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "no-unused-vars": "off",
+    "prefer-destructuring": "off"
+  }
+}

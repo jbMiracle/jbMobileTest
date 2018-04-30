@@ -1,0 +1,132 @@
+extends: airbnb
+
+# Allows ESLint to understand new/experimental syntax
+parser: babel-eslint
+
+plugins:
+  - jest
+  - babel
+  - detox
+
+env:
+  # So that eslint won't complain about globally referenced jest functions.
+  # Like: beforeEach, test, expect
+  jest/globals: true
+
+globals:
+  # Built into React Native, a boolean which is true on dev builds
+  __DEV__: false
+  # Built into React Native
+  fetch: false
+  btoa: false
+
+rules:
+
+  ###############################################
+  # General JavaScript
+  ###############################################
+
+  max-len:
+    - warn
+    - code: 120
+      ignoreComments: true
+      ignoreStrings: true
+      ignoreTemplateLiterals: true
+
+  no-console:
+  - warn
+  - allow:
+    - warn
+    - error
+    - info
+    - tron # we make this a reference to Reactotron
+    - ignoredYellowBox
+
+  # Don't allow anonymous functions.  Helps with debugging from stacktraces.
+  func-names:
+    - warn
+    - as-needed
+
+  # Turned off to allow if-elses to have returns
+  no-else-return: off
+
+  # No trailing commas for same line (e.g. [some, thing])
+  # But require them for: [
+  #   some,
+  #   thing,
+  # ]
+  comma-dangle:
+    - warn
+    - always-multiline
+
+  # Adds semicolon requirement to new syntaxes like class properties
+  babel/semi:
+    - error
+    - always
+
+  # Allow Function Hoisting
+  no-use-before-define: off
+
+  no-multiple-empty-lines:
+    - warn
+    - max: 1
+  
+  # Require all blocks (ifs, loops, etc.) to have curly braces
+  curly:
+    - error
+    - all
+  
+  # It's up to us to decide when it makes sense to have a default vs named export
+  import/prefer-default-export: off
+
+  ###############################################
+  # React-Specific
+  ###############################################
+
+  # Sometimes we need to import React even if not directly referencing it.
+  no-unused-vars:
+    - warn
+    - varsIgnorePattern: ^React$
+
+  # Enforcing single-quotes in JSX for consistency
+  jsx-quotes:
+    - error
+    - prefer-single
+
+  # Turning off because we often scaffold a component as a class with the
+  # intention of building it out later, even if it starts with nothing but
+  # a basic render() method.
+  react/prefer-stateless-function: off
+
+  # Allows js files to contain jsx (airbnb only allowed jsx files)
+  react/jsx-filename-extension:
+    - error
+    - extensions: ['.jsx', '.js']
+
+  react/forbid-prop-types:
+    - error
+    - forbid:
+      - any
+      - array
+
+  # Only check prop types when we have created a propType declaration
+  react/prop-types:
+    - error
+    - skipUndeclared: true
+
+  # Force spacing in JSX curly braces
+  react/jsx-curly-spacing:
+    - error
+    - when: 'always'
+
+  # Despite Reactotron packages being dev dependencies, we need to import them.
+  # Allow import of dev deps in filenames containing the word 'Reactotron'
+  import/no-extraneous-dependencies:
+    - warn
+    - devDependencies:
+      - 'e2e/**'
+      - '**/*.test.js'
+      - '**/__mocks__/*'
+      - '**/*Reactotron*'
+      - 'scripts/**'
+      - 'src/setupTests.js'

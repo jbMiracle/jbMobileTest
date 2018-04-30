@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render tab bar 1`] = `
+<C360TabBar
+  navigation={
+    Object {
+      "getParam": [Function],
+      "navigate": [Function],
+      "state": Object {
+        "index": 1,
+        "routes": Object {
+          "map": [Function],
+        },
+      },
+    }
+  }
+  renderIcon={[Function]}
+  style={
+    Object {
+      "bar": Object {
+        "backgroundColor": "#FFFFFF",
+        "height": 60,
+        "shadowOffset": Object {
+          "height": -3,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 5,
+      },
+      "col": Object {
+        "justifyContent": "flex-end",
+      },
+      "contents": Object {
+        "backgroundColor": "transparent",
+        "height": 60,
+        "position": "absolute",
+        "width": "100%",
+      },
+      "mainButtonHump": Object {
+        "alignSelf": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 30,
+        "height": 60,
+        "marginTop": -20,
+        "position": "absolute",
+        "shadowOffset": Object {
+          "height": -3,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 8,
+        "width": 63,
+      },
+      "mainButtonHumpAndroid": Object {
+        "alignSelf": "center",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 30,
+        "bottom": 16,
+        "height": 60,
+        "position": "absolute",
+        "shadowOffset": Object {
+          "height": -3,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 8,
+        "width": 63,
+      },
+      "outerContainer": Object {
+        "height": 60,
+      },
+      "safeView": Object {
+        "backgroundColor": "transparent",
+        "bottom": 0,
+        "height": 60,
+        "justifyContent": "flex-end",
+        "left": 0,
+        "marginTop": 60,
+        "position": "absolute",
+        "right": 0,
+      },
+      "safeViewIos": Object {
+        "backgroundColor": "#FFFFFF",
+      },
+      "topAndroidBar": Object {
+        "backgroundColor": "#FFFFFF",
+        "bottom": -1,
+        "height": 60,
+        "position": "absolute",
+        "width": "100%",
+      },
+      "topBar": Object {
+        "backgroundColor": "#FFFFFF",
+        "height": 60,
+        "position": "absolute",
+        "top": 1,
+        "width": "100%",
+      },
+    }
+  }
+  virtual={undefined}
+/>
+`;

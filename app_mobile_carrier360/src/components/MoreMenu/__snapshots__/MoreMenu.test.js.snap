@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render a menu list component 1`] = `
+<Menu
+  onBackdropPress={[Function]}
+  onClose={[Function]}
+  onOpen={[Function]}
+  onSelect={[Function]}
+  renderer={[Function]}
+  rendererProps={Object {}}
+>
+  <MenuTrigger
+    customStyles={Object {}}
+    disabled={false}
+  >
+    <Icon
+      allowFontScaling={false}
+      color="#FFFFFF"
+      name="jbh-Menu_Card"
+      size={23}
+      style={Object {}}
+    />
+  </MenuTrigger>
+  <MenuOptions
+    customStyles={
+      Object {
+        "optionText": Object {
+          "color": "#444444",
+          "fontSize": 12,
+        },
+        "optionTouchable": Object {
+          "activeOpacity": 0.3,
+          "underlayColor": "transparent",
+        },
+        "optionWrapper": Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "flexDirection": "row",
+          "margin": 5,
+        },
+        "optionsContainer": Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 7,
+        },
+        "optionsWrapper": Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 7,
+          "paddingHorizontal": 20,
+          "paddingVertical": 10,
+          "width": 449.10179640718565,
+        },
+      }
+    }
+  >
+    <View
+      style=""
+    >
+      <Image
+        resizeMode="cover"
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/profileAvatar.jpeg",
+          }
+        }
+        style={undefined}
+      />
+      <View
+        style=""
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style=""
+        >
+          David Hasselhoff
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style=""
+        >
+          Driver
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style=""
+        >
+          ABC Trucking
+        </Text>
+      </View>
+    </View>
+    <FlatList
+      bounces={false}
+      data={
+        Array [
+          Object {
+            "icon": "notebook",
+            "key": "Profile",
+          },
+          Object {
+            "icon": "people",
+            "key": "Manage Users",
+          },
+          Object {
+            "icon": "envelope",
+            "key": "Feedback",
+          },
+          Object {
+            "icon": "logout",
+            "key": "Sign Out",
+          },
+        ]
+      }
+      disableVirtualization={false}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      numColumns={1}
+      onEndReachedThreshold={2}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      updateCellsBatchingPeriod={50}
+      windowSize={21}
+    />
+  </MenuOptions>
+</Menu>
+`;

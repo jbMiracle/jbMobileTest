@@ -1,0 +1,169 @@
+{
+  "dispatch": "fn()",
+  "state": {
+    "key": "Main",
+    "isTransitioning": false,
+    "index": 0,
+    "routes": [
+      {
+        "routes": [
+          {
+            "key": "Home",
+            "isTransitioning": false,
+            "index": 0,
+            "routes": [
+              {
+                "routeName": "Home",
+                "key": "id-1523470547215-1"
+              }
+            ],
+            "routeName": "Home"
+          },
+          {
+            "key": "Offers",
+            "isTransitioning": false,
+            "index": 0,
+            "routes": [
+              {
+                "routes": [
+                  {
+                    "key": "Active Offers",
+                    "isTransitioning": false,
+                    "index": 0,
+                    "routes": [
+                      {
+                        "routeName": "Active Offers Screen",
+                        "key": "id-1523470547215-2"
+                      }
+                    ],
+                    "routeName": "Active Offers"
+                  },
+                  {
+                    "key": "Inactive Offers",
+                    "isTransitioning": false,
+                    "index": 0,
+                    "routes": [
+                      {
+                        "routeName": "Inactive Offers Screen",
+                        "key": "id-1523470547215-3"
+                      }
+                    ],
+                    "routeName": "Inactive Offers"
+                  }
+                ],
+                "index": 0,
+                "isTransitioning": false,
+                "routeName": "HeaderTabs",
+                "key": "id-1523470547215-4"
+              }
+            ],
+            "routeName": "Offers"
+          },
+          {
+            "key": "FindLoads",
+            "isTransitioning": false,
+            "index": 0,
+            "routes": [
+              {
+                "routeName": "FindLoads",
+                "key": "id-1523470547215-5"
+              }
+            ],
+            "routeName": "FindLoads"
+          },
+          {
+            "key": "MyLoads",
+            "isTransitioning": false,
+            "index": 0,
+            "routes": [
+              {
+                "routes": [
+                  {
+                    "key": "Acceptance Needed",
+                    "isTransitioning": false,
+                    "index": 0,
+                    "routes": [
+                      {
+                        "routeName": "Acceptance Needed Screen",
+                        "key": "id-1523470547215-6"
+                      }
+                    ],
+                    "routeName": "Acceptance Needed"
+                  },
+                  {
+                    "key": "Driver Assignment",
+                    "isTransitioning": false,
+                    "index": 0,
+                    "routes": [
+                      {
+                        "routeName": "Driver Assignment Screen",
+                        "key": "id-1523470547215-7"
+                      }
+                    ],
+                    "routeName": "Driver Assignment"
+                  },
+                  {
+                    "key": "In Transit",
+                    "isTransitioning": false,
+                    "index": 0,
+                    "routes": [
+                      {
+                        "routeName": "In Transit Screen",
+                        "key": "id-1523470547215-8"
+                      }
+                    ],
+                    "routeName": "In Transit"
+                  },
+                  {
+                    "key": "Completed",
+                    "isTransitioning": false,
+                    "index": 0,
+                    "routes": [
+                      {
+                        "routeName": "Completed Screen",
+                        "key": "id-1523470547215-9"
+                      }
+                    ],
+                    "routeName": "Completed"
+                  }
+                ],
+                "index": 2,
+                "isTransitioning": false,
+                "routeName": "HeaderTabs",
+                "key": "id-1523470547215-10"
+              }
+            ],
+            "routeName": "MyLoads"
+          },
+          {
+            "key": "Perks",
+            "isTransitioning": false,
+            "index": 0,
+            "routes": [
+              {
+                "routeName": "Perks",
+                "key": "id-1523470547215-11"
+              }
+            ],
+            "routeName": "Perks"
+          }
+        ],
+        "index": 1,
+        "isTransitioning": false,
+        "routeName": "Tabs",
+        "key": "id-1523470547215-18"
+      }
+    ],
+    "routeName": "Main"
+  },
+  "isFocused": " isFocused() ",
+  "addListener": "fn()",
+  "goBack": " goBack() ",
+  "navigate": " navigate() ",
+  "pop": " pop() ",
+  "popToTop": " popToTop() ",
+  "setParams": " setParams() ",
+  "getParam": " getParam() ",
+  "push": " push() ",
+  "replace": " replace() "
+}

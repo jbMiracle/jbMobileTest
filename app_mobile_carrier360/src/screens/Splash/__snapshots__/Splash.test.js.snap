@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render an empty component 1`] = `
+<Connect(Splash)
+  navigation={
+    Object {
+      "navigate": [Function],
+    }
+  }
+  style={
+    Object {
+      "container": Object {
+        "alignItems": "center",
+        "backgroundColor": "#007DBA",
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "center",
+      },
+    }
+  }
+  virtual={undefined}
+/>
+`;

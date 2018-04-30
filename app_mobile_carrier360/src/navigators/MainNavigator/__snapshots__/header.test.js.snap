@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainNav header component should shallow render with the back button active when in Offer Details 1`] = `
+<Styled(C360Header)
+  backButtonOnPress={[Function]}
+  showBackButton={true}
+  title="Offer Details"
+  virtual={undefined}
+/>
+`;
+
+exports[`MainNav header component should shallow render with the back button inactive on the Home tab 1`] = `
+<Styled(C360Header)
+  backButtonOnPress={[Function]}
+  showBackButton={false}
+  title="Back"
+  virtual={undefined}
+/>
+`;
+
+exports[`MainNav header component should shallow render with the back button inactive on the Offers tab 1`] = `
+<Styled(C360Header)
+  backButtonOnPress={[Function]}
+  showBackButton={false}
+  title="Back"
+  virtual={undefined}
+/>
+`;

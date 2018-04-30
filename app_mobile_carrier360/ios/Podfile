@@ -1,0 +1,50 @@
+platform :ios, '8.0'
+
+target 'app_mobile_carrier360' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Including React explicitly in the Podfile is required if using other Pods
+  # that depend on React.  Without this in our Podfile, CocoaPods will fetch
+  # a really old version of React when it sees it as a dependency of others.
+
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    # When preparing for release, remove unused libraries from below.
+    # For now, keep these in case someone else tries to use something in
+    # react-native, expecting it to just work.
+    'Core',
+    'CxxBridge', # Include this for RN >= 0.47
+    'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket', # Needed for debugging
+    'RCTAnimation', # Needed for FlatList and animations running on native UI thread
+    'RCTActionSheet',
+    'RCTImage',
+    'RCTBlob',
+    'RCTSettings',
+    'RCTGeolocation',
+    'RCTVibration',
+    'RCTLinkingIOS',
+  ]
+  # Explicitly include Yoga if you are using RN >= 0.42.0
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  # Third party deps podspec link
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  # Pods for app_mobile_carrier360
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+
+
+  pod 'TouchID', :path => '../node_modules/react-native-touch-id'
+
+  pod 'Dynatrace'
+
+end
