@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`GenesisSaga the saga can start the app successfully 1`] = `Object {}`;

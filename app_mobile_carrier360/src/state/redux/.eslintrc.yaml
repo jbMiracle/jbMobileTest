@@ -1,4 +1,0 @@
-rules:
-
-  # For ReduxManager methods which are overridden in ReactotronicReduxManager
-  class-methods-use-this: off
